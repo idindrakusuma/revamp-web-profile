@@ -5,6 +5,7 @@ import { Wrapper } from './styles';
 
 import Button from '../components/Button';
 import LinkButton from '../components/LinkButton';
+import Title from '../components/Title';
 class App extends React.Component {
   render() {
     return (
@@ -13,7 +14,7 @@ class App extends React.Component {
           <title> Indra Kusuma - Software Engineer Web</title>
         </Helmet>
         <Wrapper>
-          <div> Hello Indra!</div>
+          <Title text="Indra Kusuma - Software Enginer" />
           <Button text="Test Button" />
           <LinkButton text="Link Button Test" link="https://google.com"/>
         </Wrapper>

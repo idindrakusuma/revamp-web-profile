@@ -1,3 +1,7 @@
 # Revamp Web Profile Indra Kusuma
 
-Soon..
+I used this frameworks for this project,
+
+- ReactJS
+- Gatsby JS
+- Emotion (Css in JS)
