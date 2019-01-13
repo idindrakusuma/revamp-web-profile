@@ -1,7 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "revamp-web-profile-indra-kusuma",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Web Profile of Indra Kusuma",
+  "author": "Indra Kusuma <indrakusuma.udinus@gmail.com>",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -9,7 +10,7 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "jest --verbose"
   },
   "dependencies": {
     "@emotion/core": "^10.0.6",
@@ -28,5 +29,16 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-dom": "^3.0.0",
+    "react-test-renderer": "^16.7.0",
+    "react-testing-library": "^5.4.4"
   }
 }
