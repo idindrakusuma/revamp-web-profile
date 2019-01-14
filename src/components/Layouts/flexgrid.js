@@ -517,3 +517,255 @@ export const lastSm = css`
     order: 1;
   }
 `;
+
+export const colMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd1 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd2 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd3 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 25%;
+    max-width: 25%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd4 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd5 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd6 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 50%;
+    max-width: 50%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd7 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd8 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd9 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 75%;
+    max-width: 75%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd10 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd11 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMd12 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    flex-basis: 100%;
+    max-width: 100%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset0 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 0;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset1 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 8.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset2 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 16.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset3 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 25%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset4 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 33.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset5 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 41.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset6 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 50%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset7 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 58.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset8 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 66.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset9 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 75%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset10 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 83.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colMdOffset11 = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    margin-left: 91.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const startMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    justify-content: flex-start;
+    text-align: start;
+  }
+`;
+
+export const centerMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    justify-content: flex-center;
+    text-align: center;
+  }
+`;
+
+export const endMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    justify-content: flex-end;
+    text-align: end;
+  }
+`;
+
+export const topMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    align-items: flex-start;
+  }
+`;
+
+export const middleMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    align-items: center;
+  }
+`;
+
+export const bottomMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    align-items: flex-end;
+  }
+`;
+
+export const arroundMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    justify-content: space-arround;
+  }
+`;
+
+export const betweenMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    justify-content: space-betweeen;
+  }
+`;
+
+export const firstMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    order: -1;
+  }
+`;
+
+export const lastMd = css`
+  @media ${CUSTOM_MEDIA_MD_VIEWPORT} {
+    order: 1;
+  }
+`;
