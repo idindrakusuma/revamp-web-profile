@@ -1,7 +1,12 @@
 /***
+ * This is Flexbox responsive framwork built in Emotion JS
  * Original by Flexboxgrid.com
  * https://github.com/kristoferjoseph/flexboxgrid/blob/master/src/css/flexboxgrid.css
- * Refactor using emotion/core ***/
+ * 
+ * Refactor using emotion/core 
+ * @author @idindrakusuma
+ * @profile https://github.com/idindrakusuma
+ * ***/
 
 import { css } from '@emotion/core';
 
@@ -769,3 +774,256 @@ export const lastMd = css`
     order: 1;
   }
 `;
+
+export const colLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg1 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg2 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg3 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 25%;
+    max-width: 25%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg4 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg5 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg6 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 50%;
+    max-width: 50%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg7 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg8 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg9 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 75%;
+    max-width: 75%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg10 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg11 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLg12 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    flex-basis: 100%;
+    max-width: 100%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset0 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 0;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset1 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 8.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset2 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 16.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset3 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 25%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset4 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 33.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset5 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 41.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset6 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 50%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset7 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 58.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset8 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 66.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset9 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 75%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset10 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 83.33333333%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const colLgOffset11 = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    margin-left: 91.66666667%;
+    ${colDefaultStyle}
+  }
+`;
+
+export const startLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    justify-content: flex-start;
+    text-align: start;
+  }
+`;
+
+export const centerLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    justify-content: flex-center;
+    text-align: center;
+  }
+`;
+
+export const endLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    justify-content: flex-end;
+    text-align: end;
+  }
+`;
+
+export const topLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    align-items: flex-start;
+  }
+`;
+
+export const middleLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    align-items: center;
+  }
+`;
+
+export const bottomLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    align-items: flex-end;
+  }
+`;
+
+export const arroundLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    justify-content: space-arround;
+  }
+`;
+
+export const betweenLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    justify-content: space-betweeen;
+  }
+`;
+
+export const firstLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    order: -1;
+  }
+`;
+
+export const lastLg = css`
+  @media ${CUSTOM_MEDIA_LG_VIEWPORT} {
+    order: 1;
+  }
+`;
+
