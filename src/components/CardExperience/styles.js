@@ -3,10 +3,12 @@ import styled from '@emotion/styled';
 export const Wrapper = styled.div`
   background: #fff;
   border: solid 1px #1a1a1a;
-  margin-top: 30px;
+  margin: 16px 8px;
   max-height: 140px;
   overflow: hidden;
   padding: 20px;
+  position: relative;
+  box-sizing: border-box;
 `;
 
 export const Title = styled.h2`

@@ -5,8 +5,18 @@ import CustomHelmet from '../components/CustomHelmet';
 import LinkButton from '../components/LinkButton';
 import Title from '../components/Title';
 import CardExperience from '../components/CardExperience';
+import SidebarMenu from '../components/SidebarMenu/Dekstop';
 
-import { Header, Main, Menu, Section, Row, FlexGrid, FlexContent, Wrapper } from '../components/Layouts';
+import { 
+  colXs6,
+  container,
+  row,
+  Header,
+  MainPanel,
+  Wrapper
+} from '../components/Layouts';
+
+import SocialMediaData from './HomePage/socialMediaData';
 class App extends Component {
   render() {
     return (
@@ -14,28 +24,25 @@ class App extends Component {
         <CustomHelmet />
         <Wrapper>
           <Header>
-            <Menu> Hello ini Menu </Menu>
+            <SidebarMenu socialMediaData={SocialMediaData}/>
           </Header>
-          <Main>
-            <Section>
+          <MainPanel>
+            <div css={container}>
               <Title text="Indra Kusuma - Software Enginer" />
-              <FlexGrid>
-                <FlexContent>
+              <div css={row}>
+                <div css={colXs6}>
                   <CardExperience title="Software Enginer" date="dec 2018 - feb 2018" company="Suara Merdeka" />
-                </FlexContent>
-                <FlexContent>
+                </div>
+                <div css={colXs6}>
                   <CardExperience title="Software Enginer" date="dec 2018 - feb 2018" company="Suara Merdeka" />
-                </FlexContent>
-                <FlexContent>
-                  <CardExperience title="Software Enginer" date="dec 2018 - feb 2018" company="Suara Merdeka" />
-                </FlexContent>
-              </FlexGrid>
-              <Row>
-                <Button text="Test Button" icon="check" />
+                </div>
+              </div>
+              <div css={row}>
+                <Button text="Test Button" icon="check" onAction={() => { }} />
                 <LinkButton text="Link Button Test" link="https://google.com" />
-              </Row>
-            </Section>
-          </Main>
+              </div>
+            </div>
+          </MainPanel>
         </Wrapper>
       </Fragment>
     );
