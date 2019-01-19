@@ -2,6 +2,8 @@ import React, { Fragment, PureComponent } from 'react';
 import { object, string, arrayOf } from 'prop-types';
 import { isEmpty } from 'lodash';
 
+import ListMenu from '../Menu';
+
 import { avatar, name, socialMedia } from './styles';
 import IndraKusumaProfilePhoto from '../assets/indrakusuma.jpg';
 
@@ -62,12 +64,19 @@ class SideBarDesktop extends PureComponent {
     );
   };
 
+  renderListMenu = () => {
+    const { listMenu } = this.props;
+
+    return <ListMenu listMenu={listMenu}/>
+  };
+
   render() {
     return (
       <Fragment>
         {this.renderPhotoProfile()}
         {this.renderName()}
         {this.renderSocialMedia()}
+        {this.renderListMenu()}
       </Fragment>
     );
   }

@@ -17,6 +17,7 @@ import {
 } from '../components/Layouts';
 
 import SocialMediaData from './HomePage/socialMediaData';
+import ListMenuData from './HomePage/ListMenuData';
 class App extends Component {
   render() {
     return (
@@ -24,7 +25,7 @@ class App extends Component {
         <CustomHelmet />
         <Wrapper>
           <Header>
-            <SidebarMenu socialMediaData={SocialMediaData}/>
+            <SidebarMenu socialMediaData={SocialMediaData} listMenu={ListMenuData} />
           </Header>
           <MainPanel>
             <div css={container}>
