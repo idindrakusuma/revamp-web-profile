@@ -1,6 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
 
+import Favicon from './assets/favicon.png';
+
 const CustomHelmet = () => {
   return (
     <Helmet>
@@ -19,6 +21,7 @@ const CustomHelmet = () => {
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         rel="stylesheet"
       />
+      <link rel="icon" href={Favicon} />
     </Helmet>
   );
 };
