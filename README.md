@@ -11,7 +11,7 @@ Berikut detail mengenai framework yang akan saya migrasi.
 | CSS Framework | Bootstrap | EmotionJs     |
 | Js Framework | jQuery | ReactJs with GatsbyJS |
 | Package Bundle | Gulp  | Webpack |
-| Testing Libray | -  | React Testing Libray |
+| Testing Library | -  | Jest & React Testing Library |
 
 ### Old Design
 

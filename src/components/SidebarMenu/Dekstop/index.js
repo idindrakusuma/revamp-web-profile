@@ -29,7 +29,7 @@ class SideBarDesktop extends PureComponent {
         <img src={IndraKusumaProfilePhoto} alt="Indra Kusuma" />
       </div>
     );
-  }
+  };
 
   renderName = () => {
     const { fullName, title } = this.props;
@@ -54,8 +54,8 @@ class SideBarDesktop extends PureComponent {
         <ul>
           {socialMediaData.map(element => (
             <li key={element.code}>
-              <a href={element.href} target="_blank" title={element.title}>
-                <i className={element.icon}></i>
+              <a href={element.href} target="_blank" rel="noopener noreferrer" title={element.title}>
+                <i className={element.icon} />
               </a>
             </li>
           ))}
@@ -67,7 +67,7 @@ class SideBarDesktop extends PureComponent {
   renderListMenu = () => {
     const { listMenu } = this.props;
 
-    return <ListMenu listMenu={listMenu}/>
+    return <ListMenu listMenu={listMenu} />;
   };
 
   render() {
@@ -80,6 +80,6 @@ class SideBarDesktop extends PureComponent {
       </Fragment>
     );
   }
-};
+}
 
 export default SideBarDesktop;

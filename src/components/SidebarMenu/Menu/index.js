@@ -14,7 +14,7 @@ const Menus = ({ listMenu }) => {
       <ul>
         {listMenu.map((menu, index) => (
           <li key={index}>
-            <a href={menu.href}>{menu.name}</a>
+            <a href={menu.href} title={menu.name}>{menu.name}</a>
           </li>
         ))}
       </ul>
