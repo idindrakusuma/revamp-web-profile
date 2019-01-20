@@ -16,8 +16,8 @@ import {
   Wrapper
 } from '../components/Layouts';
 
-import SocialMediaData from './HomePage/socialMediaData';
-import ListMenuData from './HomePage/ListMenuData';
+import SocialMediaData from '../api/HomePage/socialMediaData';
+import ListMenuData from '../api/HomePage/socialMediaData';
 class App extends Component {
   render() {
     return (

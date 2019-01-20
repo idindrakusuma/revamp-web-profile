@@ -69,9 +69,9 @@ export const backgroundWrapper = css`
 `;
 
 /* CSS content base on Flexbox */
-const CUSTOM_VIEWPORT_SM_SCREEN = '@media (min-width: 48em)';
-const CUSTOM_VIEWPORT_MD_SCREEN = '@media (min-width: 64em)';
-const CUSTOM_VIEWPORT_LG_SCREEN = '@media (min-width: 75em)';
+// const CUSTOM_VIEWPORT_SM_SCREEN = '@media (min-width: 48em)';
+// const CUSTOM_VIEWPORT_MD_SCREEN = '@media (min-width: 64em)';
+// const CUSTOM_VIEWPORT_LG_SCREEN = '@media (min-width: 75em)';
 
 export const row = css`
   box-sizing: border-box;

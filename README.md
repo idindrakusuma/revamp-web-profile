@@ -1,5 +1,7 @@
 # Revamp Web Profile Indra Kusuma
 
+[![Build Status](https://travis-ci.org/idindrakusuma/revamp-web-profile.svg?branch=master)](https://travis-ci.org/idindrakusuma/revamp-web-profile) [![Coverage Status](https://coveralls.io/repos/github/idindrakusuma/revamp-web-profile/badge.svg?branch=master)](https://coveralls.io/github/idindrakusuma/revamp-web-profile?branch=master)
+
 Perkembangan teknologi yang begitu cepat menuntut kita sebagai Web Developer untuk selalu update mengenai berbagai tools maupun framework untuk optimasi dari web yang telah auatupun akan kita buat. Seperti web profile saya yang telah existing sebelumnya yang saya bangun menggunakan framework `Bootstrap`, `jQuery` serta `Gulp` akan saya refactor codenya dengan modern framework `ReactJS` dan `GatsbyJS` serta tools keren `Webpack` dan `EmotionJS`.
 
 ## Old to New

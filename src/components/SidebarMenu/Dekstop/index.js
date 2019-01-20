@@ -9,18 +9,19 @@ import IndraKusumaProfilePhoto from '../assets/indrakusuma.jpg';
 
 class SideBarDesktop extends PureComponent {
   static propTypes = {
-    fullName: string,
-    title: string,
-    socialMediaData: arrayOf(object),
-    listMenu: object.isRequired,
     copyrightText: string,
+    fullName: string,
+    listMenu: arrayOf(object),
+    socialMediaData: arrayOf(object),
+    title: string,
   };
 
   static defaultProps = {
-    fullName: 'Indra Kusuma',
-    title: 'Professional Web Developer',
     copyrightText: '',
+    fullName: 'Indra Kusuma',
+    listMenu: [{}],
     socialMediaData: [{}],
+    title: 'Professional Web Developer',
   };
 
   renderPhotoProfile = () => {
