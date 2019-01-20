@@ -72,3 +72,12 @@ export const copyright = css`
     font-size: 12px;
   }
 `;
+
+export const wrapper = css`
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  z-index: 8;
+  float: left;
+  display: block;
+`;

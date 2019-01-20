@@ -1,10 +1,10 @@
-import React, { Fragment, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import { object, string, arrayOf } from 'prop-types';
 import { isEmpty } from 'lodash';
 
 import ListMenu from '../Menu';
 
-import { avatar, name, socialMedia, copyright } from './styles';
+import { avatar, name, socialMedia, copyright, wrapper } from './styles';
 import IndraKusumaProfilePhoto from '../assets/indrakusuma.jpg';
 
 class SideBarDesktop extends PureComponent {
@@ -85,13 +85,13 @@ class SideBarDesktop extends PureComponent {
 
   render() {
     return (
-      <Fragment>
+      <div css={wrapper}>
         {this.renderPhotoProfile()}
         {this.renderName()}
         {this.renderSocialMedia()}
         {this.renderListMenu()}
         {this.renderCopyRight()}
-      </Fragment>
+      </div>
     );
   }
 }

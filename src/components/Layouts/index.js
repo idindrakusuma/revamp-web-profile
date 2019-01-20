@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 
+const WIDTH_MD = '1020px';
+const WIDTH_SM = '500px';
+
 export const Wrapper = styled.div`
   * {
     font-family: 'Roboto Slab', serif;
@@ -56,12 +59,35 @@ export const MainPanel = styled.div`
   background-color: #fff;
   width: 740px;
   float: right;
+
+  @media (max-width: ${WIDTH_MD}) {
+    width: 95%;
+    margin: auto;
+    float: none;
+  }
+
+  @media (max-width: ${WIDTH_SM}) {
+    width: 100%;
+    margin: auto;
+  }
 `;
 
 export const section = css`
   position: relative;
   padding: 50px 60px;
-  min-height: 84vh;
+  min-height: 87vh;
+
+  @media (max-width: ${WIDTH_MD}) {
+    padding: 30px 40px;
+    width: 95%;
+    min-height: 100vh;
+  }
+
+  @media (max-width: ${WIDTH_SM}) {
+    padding: 10px 20px;
+    width: 100%;
+    min-height: 100vh;
+  }
 `;
 
 export const backgroundWrapper = css`
