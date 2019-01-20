@@ -11,12 +11,14 @@ script: echo "Running Continous Integration.."
 
 jobs:
   include:
-    - stage: "Test1"
+    - stage: "Unit Test"
       name: "Unit test component react"
       script: yarn test -u
-    - stage: "ReportTest"
+    - stage: "Coverage Test Result"
       name: "Report unit test to coveralls"
-      script: yarn run test-coverage -u
+      script:
+        - yarn run test-coverage
+        - yarn run test-coverage -u
     - stage: "Build"
       name: "Build the app"
       script: yarn run build
