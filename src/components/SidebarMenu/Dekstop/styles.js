@@ -48,7 +48,11 @@ export const socialMedia = css`
   }
 
   a {
-    color: ${whiteColor};
+    color: #bebebe;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
   @media only screen and (max-height: 600px) {
