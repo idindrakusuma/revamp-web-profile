@@ -1,17 +1,16 @@
 import React, { Fragment, Component } from 'react';
 
-import CustomHelmet from '@components/CustomHelmet';
-import SidebarMenu from '@components/SidebarMenu/Dekstop';
+import CustomHelmet from '../../CustomHelmet';
+import SidebarMenu from '../../SidebarMenu/Dekstop';
+import { Header, MainPanel, Wrapper } from '../../Layouts';
 
-import SocialMediaData from '@src/api/HomePage/socialMediaData';
-import ListMenuData from '@src/api/HomePage/ListMenuData';
-import { Header, MainPanel, Wrapper } from '@components/Layouts';
+import SocialMediaData from '../../../api/socialMediaData';
+import ListMenuData from '../../../api/listMenuData';
 
-class withSidebar extends Component {
+class WithSidebar extends Component {
   render() {
     const { children } = this.props;
-    console.log('[Masuk sini...]');
-
+    
     return (
       <Fragment>
         <CustomHelmet />
@@ -28,4 +27,4 @@ class withSidebar extends Component {
   }
 }
 
-export default withSidebar;
+export default WithSidebar;

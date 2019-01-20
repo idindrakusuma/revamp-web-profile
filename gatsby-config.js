@@ -1,18 +1,5 @@
 module.exports = {
-  plugins: [
-    `gatsby-plugin-emotion`,
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          '@src': 'src',
-          '@components': 'src/components',
-          '@layouts': 'src/components/Layouts',
-        },
-        extensions: ['js'],
-      },
-    },
-  ],
+  plugins: [`gatsby-plugin-emotion`],
   siteMetadata: {
     title: 'Indra Kusuma - Profesional Web Developer',
     description:

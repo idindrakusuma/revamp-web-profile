@@ -5,14 +5,14 @@ import WithSidebar from '../components/HOC/withSidebar';
 
 import { section } from '../components/Layouts';
 
-const AboutPage = () => {
+const ResumePage = () => {
   return (
     <WithSidebar>
-      <div css={section} id="about-indra">
-        <Title text="About Page" />
+      <div css={section} id="resume">
+        <Title text="Resume Page" />
       </div>
     </WithSidebar>
   );
-}
+};
 
-export default AboutPage;
+export default ResumePage;
