@@ -60,7 +60,7 @@ export const MainPanel = styled.div`
 
 export const section = css`
   position: relative;
-  padding: 60px 70px;
+  padding: 50px 60px;
   min-height: 84vh;
 `;
 

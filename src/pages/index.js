@@ -1,53 +1,37 @@
-import React, { Fragment, Component } from 'react';
+import React from 'react';
 
 import Button from '../components/Button';
-import CustomHelmet from '../components/CustomHelmet';
 import LinkButton from '../components/LinkButton';
 import Title from '../components/Title';
 import CardExperience from '../components/CardExperience';
-import SidebarMenu from '../components/SidebarMenu/Dekstop';
+import WithSidebar from '../components/HOC/withSidebar';
 
 import {
   colXs6,
   row,
   section,
-  Header,
-  MainPanel,
-  Wrapper
 } from '../components/Layouts';
 
-import SocialMediaData from '../api/HomePage/socialMediaData';
-import ListMenuData from '../api/HomePage/ListMenuData';
-class App extends Component {
-  render() {
-    return (
-      <Fragment>
-        <CustomHelmet />
-        <Wrapper>
-          <Header>
-            <SidebarMenu socialMediaData={SocialMediaData} listMenu={ListMenuData} />
-          </Header>
-          <MainPanel>
-            <div css={section} id="about-indra">
-              <Title text="Indra Kusuma - Software Enginer" />
-              <div css={row}>
-                <div css={colXs6}>
-                  <CardExperience title="Software Enginer" date="dec 2018 - feb 2018" company="Suara Merdeka" />
-                </div>
-                <div css={colXs6}>
-                  <CardExperience title="Software Enginer" date="dec 2018 - feb 2018" company="Suara Merdeka" />
-                </div>
-              </div>
-              <div css={row}>
-                <Button text="Test Button" icon="check" onAction={() => { }} />
-                <LinkButton text="Link Button Test" link="https://google.com" />
-              </div>
-            </div>
-          </MainPanel>
-        </Wrapper>
-      </Fragment>
-    );
-  }
+const HomePage = () => {
+  return (
+    <WithSidebar>
+      <div css={section} id="about-indra">
+        <Title text="Indra Kusuma - Software Enginer" />
+        <div css={row}>
+          <div css={colXs6}>
+            <CardExperience title="Software Enginer" date="dec 2018 - feb 2018" company="Suara Merdeka" />
+          </div>
+          <div css={colXs6}>
+            <CardExperience title="Software Enginer" date="dec 2018 - feb 2018" company="Suara Merdeka" />
+          </div>
+        </div>
+        <div css={row}>
+          <Button text="Test Button" icon="check" onAction={() => { }} />
+          <LinkButton text="Link Button Test" link="https://google.com" />
+        </div>
+      </div>
+    </WithSidebar>
+  )
 }
 
-export default App;
+export default HomePage;

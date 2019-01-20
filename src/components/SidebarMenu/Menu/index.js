@@ -1,6 +1,7 @@
 import React from 'react';
 import { isEmpty } from 'lodash';
 import { object, arrayOf } from 'prop-types';
+import { Link } from 'gatsby';
 
 import { navigation } from './styles';
 
@@ -14,7 +15,7 @@ const Menus = ({ listMenu }) => {
       <ul>
         {listMenu.map((menu, index) => (
           <li key={index}>
-            <a href={menu.href} title={menu.name}>{menu.name}</a>
+            <Link to={menu.href} title={menu.name}>{menu.name}</Link>
           </li>
         ))}
       </ul>
