@@ -22,6 +22,10 @@ export const navigation = css`
     text-decoration: none;
     text-transform: uppercase;
     transition: all .3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+    }
   }
 
   @media only screen and (max-height: 600px) {

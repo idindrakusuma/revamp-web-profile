@@ -4,7 +4,7 @@ import { isEmpty } from 'lodash';
 
 import ListMenu from '../Menu';
 
-import { avatar, name, socialMedia } from './styles';
+import { avatar, name, socialMedia, copyright } from './styles';
 import IndraKusumaProfilePhoto from '../assets/indrakusuma.jpg';
 
 class SideBarDesktop extends PureComponent {
@@ -13,13 +13,13 @@ class SideBarDesktop extends PureComponent {
     title: string,
     socialMediaData: arrayOf(object),
     listMenu: object.isRequired,
-    copyright: string,
+    copyrightText: string,
   };
 
   static defaultProps = {
     fullName: 'Indra Kusuma',
     title: 'Professional Web Developer',
-    copyright: '',
+    copyrightText: '',
     socialMediaData: [{}],
   };
 
@@ -70,6 +70,18 @@ class SideBarDesktop extends PureComponent {
     return <ListMenu listMenu={listMenu} />;
   };
 
+  renderCopyRight = () => {
+    const { copyrightText } = this.props;
+
+    return (
+      <div css={copyright}>
+        {isEmpty(copyrightText) ?
+          <span>{`© ${new Date().getFullYear()} Indra Kusuma`}</span> :
+          <span>{copyrightText}</span>}
+      </div>
+    );
+  };
+
   render() {
     return (
       <Fragment>
@@ -77,6 +89,7 @@ class SideBarDesktop extends PureComponent {
         {this.renderName()}
         {this.renderSocialMedia()}
         {this.renderListMenu()}
+        {this.renderCopyRight()}
       </Fragment>
     );
   }

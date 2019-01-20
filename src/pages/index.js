@@ -7,10 +7,10 @@ import Title from '../components/Title';
 import CardExperience from '../components/CardExperience';
 import SidebarMenu from '../components/SidebarMenu/Dekstop';
 
-import { 
+import {
   colXs6,
-  container,
   row,
+  section,
   Header,
   MainPanel,
   Wrapper
@@ -28,7 +28,7 @@ class App extends Component {
             <SidebarMenu socialMediaData={SocialMediaData} listMenu={ListMenuData} />
           </Header>
           <MainPanel>
-            <div css={container}>
+            <div css={section} id="about-indra">
               <Title text="Indra Kusuma - Software Enginer" />
               <div css={row}>
                 <div css={colXs6}>

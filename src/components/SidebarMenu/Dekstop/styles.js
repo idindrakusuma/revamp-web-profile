@@ -1,7 +1,9 @@
 import { css } from '@emotion/core';
 
+const whiteColor = `#f1f1f1`;
+
 export const avatar = css`
-  margin-top: 10px;
+  margin-top: 2em;
   margin-left: 1em;
   overflow: hidden;
   width: 165px;
@@ -11,6 +13,7 @@ export const avatar = css`
 
 export const name = css`
   margin: 20px 0;
+  color: ${whiteColor};
 
   h1 {
     font-family: 'montserrat',sans-serif;
@@ -22,6 +25,7 @@ export const name = css`
 
   span {
     font-size: 15px;
+    font-weight: 200;
   }
 
   @media only screen and (max-height: 600px) {
@@ -44,10 +48,23 @@ export const socialMedia = css`
   }
 
   a {
-    color: #555;
+    color: ${whiteColor};
   }
 
   @media only screen and (max-height: 600px) {
     margin: 15px 0;
+  }
+`;
+
+export const copyright = css`
+  bottom: 20px;
+  position: absolute;
+  letter-spacing: 2px;
+  
+  span {
+    color: ${whiteColor};
+    font-family: roboto slab,serif;
+    font-weight: 200;
+    font-size: 12px;
   }
 `;

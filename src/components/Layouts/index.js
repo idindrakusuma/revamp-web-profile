@@ -31,7 +31,7 @@ export const Wrapper = styled.div`
   box-sizing: border-box;
   width: 1000px;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 
   @media (max-width: 64em) {
     width: 90%;
@@ -52,67 +52,26 @@ export const Menu = styled.menu`
   display: block;
 `;
 
-export const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-`;
-
 export const MainPanel = styled.div`
   background-color: #fff;
   width: 740px;
   float: right;
 `;
 
-export const Section = styled.section`
+export const section = css`
   position: relative;
-  z-index: 0;
-  height: 751px;
+  padding: 60px 70px;
+  min-height: 84vh;
 `;
 
-export const FlexGrid = styled.div`
-  display: flex;
-
-  @media (max-width: 720px) {
-    justify-content: space-between;
-  }
-
-  @media (max-width: 540px) {
-    display: block;
-  }
-`;
-
-export const FlexContent = styled.div`
-  padding: 8px;
-  flex: 1;
-
-  @media (max-width: 540px) {
-    padding: 0;
-    width: 100%;
-  }
+export const backgroundWrapper = css`
+  background: linear-gradient(to right, #000046, #1cb5e0);
 `;
 
 /* CSS content base on Flexbox */
 const CUSTOM_VIEWPORT_SM_SCREEN = '@media (min-width: 48em)';
 const CUSTOM_VIEWPORT_MD_SCREEN = '@media (min-width: 64em)';
 const CUSTOM_VIEWPORT_LG_SCREEN = '@media (min-width: 75em)';
-
-export const container = css`
-  margin-right: auto;
-  margin-left: auto;
-  width: calc(100% - 100px;);
-
-  ${CUSTOM_VIEWPORT_LG_SCREEN} {
-    width: 76rem;
-  }
-
-  ${CUSTOM_VIEWPORT_MD_SCREEN} {
-    width: 65rem;
-  }
-
-  ${CUSTOM_VIEWPORT_SM_SCREEN} {
-    width: 49rem;
-  }
-`;
 
 export const row = css`
   box-sizing: border-box;
@@ -127,14 +86,13 @@ export const row = css`
 
 const DEFAULT_COL_STYLE = `
   box-sizing: border-box;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
 `;
 
 export const colXs6 = css`
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   width: 50%;
 

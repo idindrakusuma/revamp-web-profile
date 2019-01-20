@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
 
+import backgroundWrapper from './styles';
 import Favicon from './assets/favicon.png';
 
 const CustomHelmet = () => {
@@ -22,6 +23,7 @@ const CustomHelmet = () => {
         rel="stylesheet"
       />
       <link rel="icon" href={Favicon} />
+      <body style={backgroundWrapper} />
     </Helmet>
   );
 };
