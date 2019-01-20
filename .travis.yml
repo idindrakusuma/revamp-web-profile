@@ -7,6 +7,16 @@ cache:
   directories:
     - node_modules
 
-script:
-  - yarn test -u
-  - yarn run build
+script: echo "Running Continous Integration.."
+
+jobs:
+  include:
+    - stage: "Test1"
+      name: "Unit test component react"
+      script: yarn test -u
+    - stage: "ReportTest"
+      name: "Report unit test to coveralls"
+      script: yarn run test-coverage -u
+    - stage: "Build"
+      name: "Build the app"
+      script: yarn run build

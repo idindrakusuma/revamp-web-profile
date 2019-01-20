@@ -10,7 +10,8 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "test": "jest --coverage --coverageReporters=text-lcov --verbose | coveralls"
+    "test": "jest --verbose",
+    "test-coverage": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "dependencies": {
     "@emotion/core": "^10.0.6",
