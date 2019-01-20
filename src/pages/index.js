@@ -17,7 +17,7 @@ import {
 } from '../components/Layouts';
 
 import SocialMediaData from '../api/HomePage/socialMediaData';
-import ListMenuData from '../api/HomePage/socialMediaData';
+import ListMenuData from '../api/HomePage/ListMenuData';
 class App extends Component {
   render() {
     return (

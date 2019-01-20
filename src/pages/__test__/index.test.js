@@ -7,7 +7,7 @@ const TextIndexComponent = <IndexComponent />;
 
 afterEach(cleanup);
 
-describe('Pages/Index.js Component', () => {
+describe('Homepage Component', () => {
   it('Should render correctly', () => {
     const tree = render(TextIndexComponent);
     expect(tree).toMatchSnapshot();
