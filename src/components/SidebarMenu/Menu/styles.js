@@ -56,6 +56,18 @@ export const navigation = css`
         ${AFTER_EFFECT}
       }
     }
+
+    &.active {
+      color: #fff;
+
+      &:before {
+        ${BEFORE_EFFECT}
+      }
+
+      &:after {
+        ${AFTER_EFFECT}
+      }
+    }
   }
 
   @media only screen and (max-height: 600px) {
