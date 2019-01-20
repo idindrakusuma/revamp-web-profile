@@ -1,26 +1,26 @@
 const ListMenuData = [
   {
-    href: '#welcome',
+    href: '/',
     name: 'Welcome',
   },
   {
-    href: '#about',
+    href: '/about',
     name: 'About',
   },
   {
-    href: '#resume',
+    href: '/resume',
     name: 'Resume',
   },
   {
-    href: '#blog',
+    href: '/blog',
     name: 'Blog',
   },
   {
-    href: '#works',
+    href: '/works',
     name: 'Works',
   },
   {
-    href: '#contact',
+    href: '/contact',
     name: 'Contact',
   },
 ];
