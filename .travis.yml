@@ -16,9 +16,7 @@ jobs:
       script: yarn test -u
     - stage: "Coverage Test Result"
       name: "Report unit test to coveralls"
-      script:
-        - yarn run test-coverage
-        - yarn run test-coverage -u
+      script: yarn run test-coverage -u
     - stage: "Build"
       name: "Build the app"
       script: yarn run build
