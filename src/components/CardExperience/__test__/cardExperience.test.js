@@ -1,9 +1,11 @@
 import React from 'react';
-import { render } from 'react-testing-library';
+import { render, cleanup } from 'react-testing-library';
 
 import CardExperience from '../index';
 
-const TestCardExperience = <CardExperience title="Software Engineer" date="November 2017" company="Markir"/>;
+const TestCardExperience = <CardExperience title="Software Engineer" date="November 2017" company="Markir" />;
+
+afterEach(cleanup);
 
 describe('CardExperience Component', () => {
   it('Should render correctly', () => {
