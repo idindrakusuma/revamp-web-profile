@@ -4,7 +4,7 @@ import Title from '../components/Title';
 import WithSidebar from '../components/HOC/withSidebar';
 
 import { section, row, intro, info } from '../components/Layouts';
-import { aboutMe } from '../api/aboutData';
+import { aboutMe, introduction as TextIntroduction } from '../api/aboutData';
 
 const AboutPage = () => {
   return (
@@ -12,14 +12,12 @@ const AboutPage = () => {
       <div css={section} id="about-indra">
         <Title text="About Indra Kusuma" />
         <div css={row}>
-          <p css={intro}>
-            Hello! My name is Indra Kusuma. I am an optimistic and type of person of learn by doing who have an interest in Software Engineering, specifically about Web Development.
-          </p>
+          <p css={intro} dangerouslySetInnerHTML={{__html: TextIntroduction}} />
         </div>
         <div css={row}>
           <ul css={info}>
-            { aboutMe.map(me => (
-              <li>
+            { aboutMe.map((me, index) => (
+              <li key={index}>
                 <b>{me.question} :</b> {me.answer}
               </li>
             )) }

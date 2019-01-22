@@ -90,7 +90,7 @@ export const section = css`
 
   @media (max-width: ${WIDTH_SM}) {
     padding: 10px 20px;
-    width: 100%;
+    width: 95%;
     min-height: 95vh;
   }
 `;
