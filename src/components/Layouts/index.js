@@ -90,7 +90,7 @@ export const section = css`
 
   @media (max-width: ${WIDTH_SM}) {
     padding: 10px 20px;
-    width: 95%;
+    width: 90%;
     min-height: 95vh;
   }
 `;
@@ -125,6 +125,14 @@ export const colXs6 = css`
   ${DEFAULT_COL_STYLE}
 `;
 
+export const colXs12 = css`
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  width: 100%;
+
+  ${DEFAULT_COL_STYLE}
+`;
+
 /* Style for About */
 export const intro = css`
   font-size: 14px;
@@ -143,6 +151,11 @@ export const info = css`
   li {
     &:first-child {
       padding-top: 0;
+    }
+
+    a {
+      color: #0c0c0c;
+      text-decoration: none;
     }
 
     border-bottom: dashed 1px #ddd;

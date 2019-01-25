@@ -2,14 +2,22 @@ export const aboutMe = [
   {
     question: 'Position',
     answer: 'Software Engineer Mobile Web at Tokopedia',
+    link: '',
   },
   {
     question: 'Email',
     answer: 'id.indrakusuma@gmail.com',
+    link: '',
   },
   {
     question: 'Location',
     answer: 'Jakarta, Indonesia',
+    link: '',
+  },
+  {
+    question: 'Linkedin',
+    answer: 'linkedin.com/in/idindrakusuma',
+    link: 'https://linkedin.com/in/idindrakusuma'
   },
 ];
 
