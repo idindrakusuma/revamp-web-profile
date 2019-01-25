@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
   display: block;
-  padding: 16px;
+  padding: 16px 0 24px 0;
 `;
 
 export const TitleStyle = styled.h2`
@@ -10,7 +10,7 @@ export const TitleStyle = styled.h2`
   display: inline-block;
   font-family: montserrat,sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
   text-transform: uppercase;
   padding-left: 20px;

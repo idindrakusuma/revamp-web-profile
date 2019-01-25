@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 
-const WIDTH_MD = '1020px';
+const WIDTH_MD = '1024px';
 const WIDTH_SM = '500px';
 
 export const Wrapper = styled.div`
@@ -37,8 +37,9 @@ export const Wrapper = styled.div`
   padding: 0 0.5rem;
 
   @media (max-width: 64em) {
-    width: 90%;
-    margin: 8px 16px;
+    width: 95%;
+    margin: 16px auto;
+    padding: 0;
   }
 `;
 
@@ -58,17 +59,21 @@ export const Menu = styled.menu`
 export const MainPanel = styled.div`
   background-color: #fff;
   width: 740px;
-  float: right;
+
+  @media (min-width: 1025px) {
+    float: right;
+  }
 
   @media (max-width: ${WIDTH_MD}) {
     width: 95%;
     margin: auto;
-    float: none;
+    border-radius: 10px;
   }
 
   @media (max-width: ${WIDTH_SM}) {
     width: 100%;
     margin: auto;
+    border-radius: 10px;
   }
 `;
 
@@ -80,24 +85,19 @@ export const section = css`
   @media (max-width: ${WIDTH_MD}) {
     padding: 30px 40px;
     width: 95%;
-    min-height: 100vh;
+    min-height: 95vh;
   }
 
   @media (max-width: ${WIDTH_SM}) {
     padding: 10px 20px;
-    width: 100%;
-    min-height: 100vh;
+    width: 90%;
+    min-height: 95vh;
   }
 `;
 
 export const backgroundWrapper = css`
   background: linear-gradient(to right, #000046, #1cb5e0);
 `;
-
-/* CSS content base on Flexbox */
-// const CUSTOM_VIEWPORT_SM_SCREEN = '@media (min-width: 48em)';
-// const CUSTOM_VIEWPORT_MD_SCREEN = '@media (min-width: 64em)';
-// const CUSTOM_VIEWPORT_LG_SCREEN = '@media (min-width: 75em)';
 
 export const row = css`
   box-sizing: border-box;
@@ -123,4 +123,46 @@ export const colXs6 = css`
   width: 50%;
 
   ${DEFAULT_COL_STYLE}
+`;
+
+export const colXs12 = css`
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  width: 100%;
+
+  ${DEFAULT_COL_STYLE}
+`;
+
+/* Style for About */
+export const intro = css`
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #2c2c2c;
+  margin: 20px 0;
+`;
+
+export const info = css`
+  margin-bottom: 40px;
+  padding: 0 !important;
+  width: 100%;
+  list-style: none;
+
+  li {
+    &:first-child {
+      padding-top: 0;
+    }
+
+    a {
+      color: #0c0c0c;
+      text-decoration: none;
+    }
+
+    border-bottom: dashed 1px #ddd;
+    padding: 15px 0;
+    font-family: roboto slab,sans-serif;
+    font-weight: 300;
+    color: #0c0c0c;
+    font-size: 14px;
+  }
 `;
