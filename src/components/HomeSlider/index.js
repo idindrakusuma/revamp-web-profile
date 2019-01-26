@@ -30,10 +30,14 @@ class HomeSlider extends PureComponent {
     this.loopImagesHandler();
   }
 
+  componentWillUnmount() {
+    clearInterval(this.timer);
+  }
+
   loopImagesHandler = () => {
-    setInterval(() => {
+    this.timer = setInterval(() => {
       this.nextImageHandler();
-    }, 4000);
+    }, 5000);
   };
 
   nextImageHandler = () => {

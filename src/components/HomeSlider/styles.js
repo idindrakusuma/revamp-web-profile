@@ -1,4 +1,4 @@
-import { css, keyframes } from '@emotion/core';
+import { css } from '@emotion/core';
 
 export const slidesWrapper = css`
   position: relative;
@@ -18,7 +18,7 @@ export const quoteText = css`
   margin: 0 auto;
   top: calc(50% - 60px);
   position: relative;
-  width: 500px;
+  max-width: 500px;
   z-index: 1;
   text-align: center;
 
@@ -64,24 +64,7 @@ export const imageOverlay = css`
   top: 0;
   position: absolute;
   width: 100%;
-`;
-
-const animationFadeIn = keyframes`
-  0% {
-    opacity:1;
-  }
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+  
 `;
 
 export const backstrech = css`
@@ -107,9 +90,6 @@ export const backstrech = css`
     z-index: -999999;
     left: -343.44px;
     top: 0px;
-    animation-name: ${animationFadeIn};
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
   }
 `;
 

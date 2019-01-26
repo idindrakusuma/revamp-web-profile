@@ -1,5 +1,9 @@
 export const images = [
   {
+    title: 'Creative x IT Future Leader Summit 2017',
+    imageSrc: 'https://user-images.githubusercontent.com/10141928/51781811-bd631b80-2150-11e9-8292-5af4766c690c.png',
+  },
+  {
     title: 'Tokopedia Devcamp Team',
     imageSrc: 'https://user-images.githubusercontent.com/10141928/51781801-8d1b7d00-2150-11e9-827f-c979dda69fa1.jpg',
   },
@@ -14,10 +18,6 @@ export const images = [
   {
     title: 'Gala Dinner FLS 2017',
     imageSrc: 'https://user-images.githubusercontent.com/10141928/51781808-aae8e200-2150-11e9-8e4a-14330c5fa9e0.png',
-  },
-  {
-    title: 'Creative x IT Future Leader Summit 2017',
-    imageSrc: 'https://user-images.githubusercontent.com/10141928/51781811-bd631b80-2150-11e9-8292-5af4766c690c.png',
   },
 ];
 
