@@ -47,14 +47,14 @@ class SideBarDesktop extends PureComponent {
     const { socialMediaData } = this.props;
 
     if (isEmpty(socialMediaData)) {
-      return undefined;
+      return null;
     }
 
     return (
       <div css={socialMedia}>
         <ul>
-          {socialMediaData.map(element => (
-            <li key={element.code}>
+          {socialMediaData.map((element, index) => (
+            <li key={index}>
               <a href={element.href} target="_blank" rel="noopener noreferrer" title={element.title}>
                 <i className={element.icon} />
               </a>

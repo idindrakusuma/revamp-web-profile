@@ -1,16 +1,16 @@
 import React from 'react';
 
-import Title from '../components/Title';
 import WithSidebar from '../components/HOC/withSidebar';
+import HomeSlider from '../components/HomeSlider';
 
 import { section } from '../components/Layouts';
+
+import { images, quoteText} from '../api/sliderData';
 
 const HomePage = () => {
   return (
     <WithSidebar>
-      <div css={section} id="Indra Kusuma">
-        <Title text="Welcome" />
-      </div>
+      <HomeSlider items={images} quote={quoteText} />
     </WithSidebar>
   );
 };
