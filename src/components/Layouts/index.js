@@ -149,7 +149,7 @@ export const info = css`
   list-style: none;
 
   li {
-    &:first-child {
+    &:first-of-type {
       padding-top: 0;
     }
 
