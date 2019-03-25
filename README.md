@@ -15,13 +15,15 @@ Berikut detail mengenai framework yang akan saya migrasi.
 | Package Bundle | Gulp  | Webpack |
 | Testing Library | -  | Jest & React Testing Library |
 
-### Old Design
+## Progress
 
-![https://indrakusuma.web.id/web-profile](./doc/assets/ending.png)
-
-### New Design
-
-Not ready yet.
+[x] Homepage
+[x] Slider - Still Buggy
+[x] About Page
+[ ] Resume Page
+[ ] Blog
+[ ] Works Page
+[ ] Contact Page
 
 ## How to Run
 
